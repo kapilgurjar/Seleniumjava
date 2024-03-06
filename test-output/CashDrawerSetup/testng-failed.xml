@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [CashDrawerSetup]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="testCases.CashDrawerSetup">
+        <methods>
+          <include name="TC08verify_CurrencySection_With_Invalid_Data"/>
+          <include name="afterMethod"/>
+          <include name="endTest"/>
+          <include name="setup"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- testCases.CashDrawerSetup -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [CashDrawerSetup] -->

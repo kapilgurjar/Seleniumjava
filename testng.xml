@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="ApexRegression" verbose="10">
+	<listeners>
+		<listener class-name="com.apex.analyzer.MyTransformer" />
+		<listener class-name="com.apex.listeners.TestAllureListener" />
+	</listeners>
+	<test thread-count="5" name="Test">
+		<classes>
+			<class name="com.apex.testCases.CashDrawerMaintenance" />
+			<!--<class name="com.apex.testCases.MoveFundsTC" />-->
+			 <!-- <class name="com.apex.testCases.ViewSiteClosing" /> --> 
+			<!-- <class name="com.apex.testCases.CashManagementReports" />
+			<class name="com.apex.testCases.SafeMaintenance" />--> 
+		<!--	 <class name="com.apex.testCases.ItemCriteriaSelectionTC" />-->
+			<!--  <class name="com.apex.testCases.EntityOwnership" />
+			<class name="com.apex.testCases.ConfigByNameTC" />-->
+			
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

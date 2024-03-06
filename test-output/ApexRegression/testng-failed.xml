@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="10" name="Failed suite [ApexRegression]">
+  <listeners>
+    <listener class-name="com.apex.analyzer.MyTransformer"/>
+    <listener class-name="com.apex.listener.TestAllureListener"/>
+  </listeners>
+  <test thread-count="5" verbose="10" name="Test(failed)">
+    <classes>
+      <class name="com.apex.testCases.CashDrawerMaintenance">
+        <methods>
+          <include name="TC56verifyAuthorizationWindowWithWrongCredentailOnCashDrawerReconciliation"/>
+          <include name="beforeMethod"/>
+          <include name="TC52verifyCASH_RECON_CHECK_AUTO_VERIFYOnCashDrawerReconciliation"/>
+          <include name="endTest"/>
+          <include name="TC41verifyActualExpectedAndOverShortAmountOnCashDrawerReconciliation"/>
+          <include name="TC30changesIncurrencyCoinOtherTendersOnCashDrawerDeclaration"/>
+          <include name="TC42VerifySiteNoAndSiteNameAreDisabledOnCashDrawerReconciliation"/>
+          <include name="TC22verifyCancelButtonCashDrawerDecelaration"/>
+          <include name="setup"/>
+          <include name="TC49verifyTheActualAmountOnCashDrawerReconciliation"/>
+          <include name="TC44verifySAFE_RECON_IN_PROCESS_OnReconScreenOnCashDrawerReconciliation"/>
+          <include name="TC47verifyCSHBOX_FORCE_DECLARATIONOnCashDrawerReconciliation"/>
+          <include name="TC43VerifyCancelButtonOnCashDrawerReconciliation"/>
+          <include name="TC55verifyExitButtonIsWorkingOnCashDrawerReconciliation"/>
+          <include name="TC26verifyHeaderFieldsGreyedOutOnCashDrawerDeclaration"/>
+          <include name="TC20verifySiteNoAndSiteNameTextFiledAreVisibleOnCashDrawerDeclaration"/>
+          <include name="TC48verifySuggestedFloatAmountInCashDrawerRecon"/>
+          <include name="afterMethod"/>
+        </methods>
+      </class> <!-- com.apex.testCases.CashDrawerMaintenance -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [ApexRegression] -->

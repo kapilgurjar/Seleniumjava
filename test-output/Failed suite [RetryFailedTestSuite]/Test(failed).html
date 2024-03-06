@@ -1,0 +1,658 @@
+<html>
+<head>
+<title>TestNG:  Test(failed)</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test(failed)</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>31/1/5</td>
+</tr><tr>
+<td>Started on:</td><td>Tue Aug 02 15:12:28 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>2244 seconds (2244556 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.apex.testCases.SafeMaintenance.TC35verifyExpAmountSumInCheckAuditScreen()'><b>TC35verifyExpAmountSumInCheckAuditScreen</b><br>Test class: com.apex.testCases.SafeMaintenance</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //button[text()=&apos;OK&apos;] (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;SEZLAP-13554T&apos;, ip: &apos;192.168.1.211&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_311&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\Kapil\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65451}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65451/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6948c3d116457f4c66984527aa922b13
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.apex.utils.ElementUtil.clickWhenReady(ElementUtil.java:360)
+	at com.apex.pages.SafeReconciliation.ClickOnSafeReconUIPopUpOkButton(SafeReconciliation.java:108)
+	at com.apex.testCases.SafeMaintenance.TC35verifyExpAmountSumInCheckAuditScreen(SafeMaintenance.java:1060)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1087492941", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1087492941'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //button[text()=&apos;OK&apos;] (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;SEZLAP-13554T&apos;, ip: &apos;192.168.1.211&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_311&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\Kapil\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65451}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65451/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 6948c3d116457f4c66984527aa922b13
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.apex.utils.ElementUtil.clickWhenReady(ElementUtil.java:360)
+	at com.apex.pages.SafeReconciliation.ClickOnSafeReconUIPopUpOkButton(SafeReconciliation.java:108)
+	at com.apex.testCases.SafeMaintenance.TC35verifyExpAmountSumInCheckAuditScreen(SafeMaintenance.java:1060)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>94</td>
+<td>com.apex.testCases.SafeMaintenance@7ce69770</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.apex.testCases.MoveFundsTC.TC08verifyTendersCheckNoAutoReconcilingAreShown()'><b>TC08verifyTendersCheckNoAutoReconcilingAreShown</b><br>Test class: com.apex.testCases.MoveFundsTC</td>
+<td></td>
+<td>31</td>
+<td>com.apex.testCases.MoveFundsTC@645aa696</td></tr>
+<tr>
+<td title='com.apex.testCases.MoveFundsTC.TC07verifyCancelorClearButton()'><b>TC07verifyCancelorClearButton</b><br>Test class: com.apex.testCases.MoveFundsTC</td>
+<td></td>
+<td>21</td>
+<td>com.apex.testCases.MoveFundsTC@645aa696</td></tr>
+<tr>
+<td title='com.apex.testCases.SafeMaintenance.TC17verifySAFE_TRAN_TYPE_REQUIRED()'><b>TC17verifySAFE_TRAN_TYPE_REQUIRED</b><br>Test class: com.apex.testCases.SafeMaintenance</td>
+<td></td>
+<td>32</td>
+<td>com.apex.testCases.SafeMaintenance@7ce69770</td></tr>
+<tr>
+<td title='com.apex.testCases.SafeMaintenance.TC39verifyINCLUDE_AR_CHARGES()'><b>TC39verifyINCLUDE_AR_CHARGES</b><br>Test class: com.apex.testCases.SafeMaintenance</td>
+<td></td>
+<td>54</td>
+<td>com.apex.testCases.SafeMaintenance@7ce69770</td></tr>
+<tr>
+<td title='com.apex.testCases.MoveFundsTC.TC06verifyFromAndTOValuesINValidMessage()'><b>TC06verifyFromAndTOValuesINValidMessage</b><br>Test class: com.apex.testCases.MoveFundsTC</td>
+<td></td>
+<td>24</td>
+<td>com.apex.testCases.MoveFundsTC@645aa696</td></tr>
+<tr>
+<td title='com.apex.testCases.CashDrawerMaintenance.TC48verifySuggestedFloatAmountInCashDrawerRecon()'><b>TC48verifySuggestedFloatAmountInCashDrawerRecon</b><br>Test class: com.apex.testCases.CashDrawerMaintenance</td>
+<td></td>
+<td>55</td>
+<td>com.apex.testCases.CashDrawerMaintenance@305ffe9e</td></tr>
+<tr>
+<td title='com.apex.testCases.SafeMaintenance.TC34verifyunreconciledDrawersDate()'><b>TC34verifyunreconciledDrawersDate</b><br>Test class: com.apex.testCases.SafeMaintenance</td>
+<td></td>
+<td>40</td>
+<td>com.apex.testCases.SafeMaintenance@7ce69770</td></tr>
+<tr>
+<td title='com.apex.testCases.MoveFundsTC.TC14verifySAFE_RECON_IN_PROCESS_OnMoveFunds()'><b>TC14verifySAFE_RECON_IN_PROCESS_OnMoveFunds</b><br>Test class: com.apex.testCases.MoveFundsTC</td>
+<td></td>
+<td>111</td>
+<td>com.apex.testCases.MoveFundsTC@645aa696</td></tr>
+<tr>
+<td title='com.apex.testCases.ViewSiteClosing.TC04verifyAllSitesCountandSiteNO()'><b>TC04verifyAllSitesCountandSiteNO</b><br>Test class: com.apex.testCases.ViewSiteClosing</td>
+<td></td>
+<td>63</td>
+<td>com.apex.testCases.ViewSiteClosing@70ed52de</td></tr>
+<tr>
+<td title='com.apex.testCases.SafeMaintenance.TC29VerifyTenderRegionShouldBePopulated()'><b>TC29VerifyTenderRegionShouldBePopulated</b><br>Test class: com.apex.testCases.SafeMaintenance</td>
+<td></td>
+<td>44</td>
+<td>com.apex.testCases.SafeMaintenance@7ce69770</td></tr>
+<tr>
+<td title='com.apex.testCases.SafeMaintenance.TC30verifyTotalExpectedAmountInTenderSection()'><b>TC30verifyTotalExpectedAmountInTenderSection</b><br>Test class: com.apex.testCases.SafeMaintenance</td>
+<td></td>
+<td>49</td>
+<td>com.apex.testCases.SafeMaintenance@7ce69770</td></tr>
+<tr>
+<td title='com.apex.testCases.MoveFundsTC.TC04verifybillNameMoveFundsScreen()'><b>TC04verifybillNameMoveFundsScreen</b><br>Test class: com.apex.testCases.MoveFundsTC</td>
+<td></td>
+<td>27</td>
+<td>com.apex.testCases.MoveFundsTC@645aa696</td></tr>
+<tr>
+<td title='com.apex.testCases.MoveFundsTC.TC16verifyAuthorizationWindowWgOnMoveFunds()'><b>TC16verifyAuthorizationWindowWgOnMoveFunds</b><br>Test class: com.apex.testCases.MoveFundsTC</td>
+<td></td>
+<td>27</td>
+<td>com.apex.testCases.MoveFundsTC@645aa696</td></tr>
+<tr>
+<td title='com.apex.testCases.MoveFundsTC.TC05verifyCoinNameMoveFundsScreen()'><b>TC05verifyCoinNameMoveFundsScreen</b><br>Test class: com.apex.testCases.MoveFundsTC</td>
+<td></td>
+<td>28</td>
+<td>com.apex.testCases.MoveFundsTC@645aa696</td></tr>
+<tr>
+<td title='com.apex.testCases.CashDrawerMaintenance.TC23verifyAuthorisationWindowWithInvalidcredentials()'><b>TC23verifyAuthorisationWindowWithInvalidcredentials</b><br>Test class: com.apex.testCases.CashDrawerMaintenance</td>
+<td></td>
+<td>35</td>
+<td>com.apex.testCases.CashDrawerMaintenance@305ffe9e</td></tr>
+<tr>
+<td title='com.apex.testCases.MoveFundsTC.TC15verifyCommentFieldIsMandatoryOnthebasisOfFlag()'><b>TC15verifyCommentFieldIsMandatoryOnthebasisOfFlag</b><br>Test class: com.apex.testCases.MoveFundsTC</td>
+<td></td>
+<td>23</td>
+<td>com.apex.testCases.MoveFundsTC@645aa696</td></tr>
+<tr>
+<td title='com.apex.testCases.CashManagementReports.TC09verifyPreviewButton()'><b>TC09verifyPreviewButton</b><br>Test class: com.apex.testCases.CashManagementReports</td>
+<td></td>
+<td>27</td>
+<td>com.apex.testCases.CashManagementReports@7bba5817</td></tr>
+<tr>
+<td title='com.apex.testCases.SafeMaintenance.TC32verifybillNameSafeRecon()'><b>TC32verifybillNameSafeRecon</b><br>Test class: com.apex.testCases.SafeMaintenance</td>
+<td></td>
+<td>40</td>
+<td>com.apex.testCases.SafeMaintenance@7ce69770</td></tr>
+<tr>
+<td title='com.apex.testCases.CashDrawerMaintenance.TC30changesIncurrencyCoinOtherTenders()'><b>TC30changesIncurrencyCoinOtherTenders</b><br>Test class: com.apex.testCases.CashDrawerMaintenance</td>
+<td></td>
+<td>55</td>
+<td>com.apex.testCases.CashDrawerMaintenance@305ffe9e</td></tr>
+<tr>
+<td title='com.apex.testCases.MoveFundsTC.TC11verifyDrawerIfSelectedFromAgainstDB()'><b>TC11verifyDrawerIfSelectedFromAgainstDB</b><br>Test class: com.apex.testCases.MoveFundsTC</td>
+<td></td>
+<td>47</td>
+<td>com.apex.testCases.MoveFundsTC@645aa696</td></tr>
+<tr>
+<td title='com.apex.testCases.SafeMaintenance.TC33verifyCoinNameSafeRecon()'><b>TC33verifyCoinNameSafeRecon</b><br>Test class: com.apex.testCases.SafeMaintenance</td>
+<td></td>
+<td>40</td>
+<td>com.apex.testCases.SafeMaintenance@7ce69770</td></tr>
+<tr>
+<td title='com.apex.testCases.SafeMaintenance.TC40verifySAFE_RECON_IN_PROCESS_OnSAfeReconScreen()'><b>TC40verifySAFE_RECON_IN_PROCESS_OnSAfeReconScreen</b><br>Test class: com.apex.testCases.SafeMaintenance</td>
+<td></td>
+<td>83</td>
+<td>com.apex.testCases.SafeMaintenance@7ce69770</td></tr>
+<tr>
+<td title='com.apex.testCases.CashDrawerMaintenance.TC41verifyActualExpectedAndOverShortAmount()'><b>TC41verifyActualExpectedAndOverShortAmount</b><br>Test class: com.apex.testCases.CashDrawerMaintenance</td>
+<td></td>
+<td>135</td>
+<td>com.apex.testCases.CashDrawerMaintenance@305ffe9e</td></tr>
+<tr>
+<td title='com.apex.testCases.MoveFundsTC.TC12verifyDrawerIfSelectedTOAgainstDB()'><b>TC12verifyDrawerIfSelectedTOAgainstDB</b><br>Test class: com.apex.testCases.MoveFundsTC</td>
+<td></td>
+<td>44</td>
+<td>com.apex.testCases.MoveFundsTC@645aa696</td></tr>
+<tr>
+<td title='com.apex.testCases.ViewSiteClosing.TC06verifyChangeOfSiteGroupShouldRefreshTheReportData()'><b>TC06verifyChangeOfSiteGroupShouldRefreshTheReportData</b><br>Test class: com.apex.testCases.ViewSiteClosing</td>
+<td></td>
+<td>45</td>
+<td>com.apex.testCases.ViewSiteClosing@70ed52de</td></tr>
+<tr>
+<td title='com.apex.testCases.MoveFundsTC.TC17verifyAuthorizationWindowWithWrongCredentialsOnMoveFunds()'><b>TC17verifyAuthorizationWindowWithWrongCredentialsOnMoveFunds</b><br>Test class: com.apex.testCases.MoveFundsTC</td>
+<td></td>
+<td>30</td>
+<td>com.apex.testCases.MoveFundsTC@645aa696</td></tr>
+<tr>
+<td title='com.apex.testCases.ViewSiteClosing.TC05verifyLastDayClosedDateAndCurrentDate()'><b>TC05verifyLastDayClosedDateAndCurrentDate</b><br>Test class: com.apex.testCases.ViewSiteClosing</td>
+<td></td>
+<td>32</td>
+<td>com.apex.testCases.ViewSiteClosing@70ed52de</td></tr>
+<tr>
+<td title='com.apex.testCases.SafeMaintenance.TC25verifyReconciliationDateLessthanCurrentDate()'><b>TC25verifyReconciliationDateLessthanCurrentDate</b><br>Test class: com.apex.testCases.SafeMaintenance</td>
+<td></td>
+<td>72</td>
+<td>com.apex.testCases.SafeMaintenance@7ce69770</td></tr>
+<tr>
+<td title='com.apex.testCases.SafeMaintenance.TC18verifyThatTypeFiledIsRequired()'><b>TC18verifyThatTypeFiledIsRequired</b><br>Test class: com.apex.testCases.SafeMaintenance</td>
+<td></td>
+<td>38</td>
+<td>com.apex.testCases.SafeMaintenance@7ce69770</td></tr>
+<tr>
+<td title='com.apex.testCases.MoveFundsTC.TC13verifyThatCommentFieldISMandatory()'><b>TC13verifyThatCommentFieldISMandatory</b><br>Test class: com.apex.testCases.MoveFundsTC</td>
+<td></td>
+<td>24</td>
+<td>com.apex.testCases.MoveFundsTC@645aa696</td></tr>
+<tr>
+<td title='com.apex.testCases.SafeMaintenance.TC38verifyCheckDetailsButtonIsEnable()'><b>TC38verifyCheckDetailsButtonIsEnable</b><br>Test class: com.apex.testCases.SafeMaintenance</td>
+<td></td>
+<td>40</td>
+<td>com.apex.testCases.SafeMaintenance@7ce69770</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.apex.testCases.SafeMaintenance.TC35verifyExpAmountSumInCheckAuditScreen()'><b>TC35verifyExpAmountSumInCheckAuditScreen</b><br>Test class: com.apex.testCases.SafeMaintenance</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //button[text()=&apos;OK&apos;] (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;SEZLAP-13554T&apos;, ip: &apos;192.168.1.211&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_311&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\Kapil\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65397}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65397/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 180bf6d3b3570528bdb4c2973dd84dcd
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.apex.utils.ElementUtil.clickWhenReady(ElementUtil.java:360)
+	at com.apex.pages.SafeReconciliation.ClickOnSafeReconUIPopUpOkButton(SafeReconciliation.java:108)
+	at com.apex.testCases.SafeMaintenance.TC35verifyExpAmountSumInCheckAuditScreen(SafeMaintenance.java:1060)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace741524487", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace741524487'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //button[text()=&apos;OK&apos;] (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;SEZLAP-13554T&apos;, ip: &apos;192.168.1.211&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_311&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\Kapil\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65397}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65397/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 180bf6d3b3570528bdb4c2973dd84dcd
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.apex.utils.ElementUtil.clickWhenReady(ElementUtil.java:360)
+	at com.apex.pages.SafeReconciliation.ClickOnSafeReconUIPopUpOkButton(SafeReconciliation.java:108)
+	at com.apex.testCases.SafeMaintenance.TC35verifyExpAmountSumInCheckAuditScreen(SafeMaintenance.java:1060)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>99</td>
+<td>com.apex.testCases.SafeMaintenance@7ce69770</td></tr>
+<tr>
+<td title='com.apex.testCases.CashDrawerMaintenance.TC41verifyActualExpectedAndOverShortAmount()'><b>TC41verifyActualExpectedAndOverShortAmount</b><br>Test class: com.apex.testCases.CashDrawerMaintenance</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;t-Button t-Button--icon t-Button--iconRight t-Button--hot&quot; onclick=&quot;apex.submit({request:&apos;EXIT&apos;,validate:true});&quot; type=&quot;button&quot; id=&quot;B368018065553670163&quot;&gt;...&lt;/button&gt; is not clickable at point (1231, 84). Other element would receive the click: &lt;div class=&quot;ui-widget-overlay ui-front&quot; style=&quot;z-index: 900;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=103.0.5060.134)
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;SEZLAP-13554T&apos;, ip: &apos;192.168.1.211&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_311&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2d24a17b0d94dc8f99ea5a975d47d66f, clickElement {id=501f2776-49f2-4811-b42f-558977819046}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\Kapil\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49799}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49799/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (2d24a17b0d94dc8f99ea5a975d47d66f)] -&gt; xpath: (//*[@class=&apos;t-BreadcrumbRegion-buttons&apos;]//button)[3]]
+Session ID: 2d24a17b0d94dc8f99ea5a975d47d66f
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at com.apex.utils.ElementUtil.doClick(ElementUtil.java:71)
+	at com.apex.testCases.CashDrawerMaintenance.TC41verifyActualExpectedAndOverShortAmount(CashDrawerMaintenance.java:1008)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1790559822", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1790559822'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;t-Button t-Button--icon t-Button--iconRight t-Button--hot&quot; onclick=&quot;apex.submit({request:&apos;EXIT&apos;,validate:true});&quot; type=&quot;button&quot; id=&quot;B368018065553670163&quot;&gt;...&lt;/button&gt; is not clickable at point (1231, 84). Other element would receive the click: &lt;div class=&quot;ui-widget-overlay ui-front&quot; style=&quot;z-index: 900;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=103.0.5060.134)
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;SEZLAP-13554T&apos;, ip: &apos;192.168.1.211&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_311&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2d24a17b0d94dc8f99ea5a975d47d66f, clickElement {id=501f2776-49f2-4811-b42f-558977819046}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\Kapil\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49799}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49799/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (2d24a17b0d94dc8f99ea5a975d47d66f)] -&gt; xpath: (//*[@class=&apos;t-BreadcrumbRegion-buttons&apos;]//button)[3]]
+Session ID: 2d24a17b0d94dc8f99ea5a975d47d66f
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at com.apex.utils.ElementUtil.doClick(ElementUtil.java:71)
+	at com.apex.testCases.CashDrawerMaintenance.TC41verifyActualExpectedAndOverShortAmount(CashDrawerMaintenance.java:1008)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>87</td>
+<td>com.apex.testCases.CashDrawerMaintenance@305ffe9e</td></tr>
+<tr>
+<td title='com.apex.testCases.CashDrawerMaintenance.TC41verifyActualExpectedAndOverShortAmount()'><b>TC41verifyActualExpectedAndOverShortAmount</b><br>Test class: com.apex.testCases.CashDrawerMaintenance</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;t-Button t-Button--icon t-Button--iconRight t-Button--hot&quot; onclick=&quot;apex.submit({request:&apos;EXIT&apos;,validate:true});&quot; type=&quot;button&quot; id=&quot;B368018065553670163&quot;&gt;...&lt;/button&gt; is not clickable at point (1231, 84). Other element would receive the click: &lt;div class=&quot;ui-widget-overlay ui-front&quot; style=&quot;z-index: 900;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=103.0.5060.134)
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;SEZLAP-13554T&apos;, ip: &apos;192.168.1.211&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_311&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [eafbb0946f9cbe01d9d891e574091169, clickElement {id=5359490f-cc35-4a1d-8b03-12b5ef45cb7f}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\Kapil\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49743}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49743/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (eafbb0946f9cbe01d9d891e574091169)] -&gt; xpath: (//*[@class=&apos;t-BreadcrumbRegion-buttons&apos;]//button)[3]]
+Session ID: eafbb0946f9cbe01d9d891e574091169
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at com.apex.utils.ElementUtil.doClick(ElementUtil.java:71)
+	at com.apex.testCases.CashDrawerMaintenance.TC41verifyActualExpectedAndOverShortAmount(CashDrawerMaintenance.java:1008)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1660006731", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1660006731'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;t-Button t-Button--icon t-Button--iconRight t-Button--hot&quot; onclick=&quot;apex.submit({request:&apos;EXIT&apos;,validate:true});&quot; type=&quot;button&quot; id=&quot;B368018065553670163&quot;&gt;...&lt;/button&gt; is not clickable at point (1231, 84). Other element would receive the click: &lt;div class=&quot;ui-widget-overlay ui-front&quot; style=&quot;z-index: 900;&quot;&gt;&lt;/div&gt;
+  (Session info: chrome=103.0.5060.134)
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;SEZLAP-13554T&apos;, ip: &apos;192.168.1.211&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_311&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [eafbb0946f9cbe01d9d891e574091169, clickElement {id=5359490f-cc35-4a1d-8b03-12b5ef45cb7f}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\Kapil\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49743}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49743/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (eafbb0946f9cbe01d9d891e574091169)] -&gt; xpath: (//*[@class=&apos;t-BreadcrumbRegion-buttons&apos;]//button)[3]]
+Session ID: eafbb0946f9cbe01d9d891e574091169
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at com.apex.utils.ElementUtil.doClick(ElementUtil.java:71)
+	at com.apex.testCases.CashDrawerMaintenance.TC41verifyActualExpectedAndOverShortAmount(CashDrawerMaintenance.java:1008)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>87</td>
+<td>com.apex.testCases.CashDrawerMaintenance@305ffe9e</td></tr>
+<tr>
+<td title='com.apex.testCases.SafeMaintenance.TC35verifyExpAmountSumInCheckAuditScreen()'><b>TC35verifyExpAmountSumInCheckAuditScreen</b><br>Test class: com.apex.testCases.SafeMaintenance</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //span[text()=&apos;Check Audit&apos;]//parent::button (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;SEZLAP-13554T&apos;, ip: &apos;192.168.1.211&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_311&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\Kapil\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65342}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65342/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 472d97294de9e3aad1440111f000f905
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.apex.utils.ElementUtil.clickWhenReady(ElementUtil.java:360)
+	at com.apex.pages.SafeReconciliation.clickOnCheckAuditButton1(SafeReconciliation.java:372)
+	at com.apex.testCases.SafeMaintenance.TC35verifyExpAmountSumInCheckAuditScreen(SafeMaintenance.java:1065)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace613355664", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace613355664'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //span[text()=&apos;Check Audit&apos;]//parent::button (tried for 60 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;SEZLAP-13554T&apos;, ip: &apos;192.168.1.211&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_311&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\Kapil\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65342}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65342/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 472d97294de9e3aad1440111f000f905
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:138)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at com.apex.utils.ElementUtil.clickWhenReady(ElementUtil.java:360)
+	at com.apex.pages.SafeReconciliation.clickOnCheckAuditButton1(SafeReconciliation.java:372)
+	at com.apex.testCases.SafeMaintenance.TC35verifyExpAmountSumInCheckAuditScreen(SafeMaintenance.java:1065)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>102</td>
+<td>com.apex.testCases.SafeMaintenance@7ce69770</td></tr>
+<tr>
+<td title='com.apex.testCases.CashDrawerMaintenance.TC48verifySuggestedFloatAmountInCashDrawerRecon()'><b>TC48verifySuggestedFloatAmountInCashDrawerRecon</b><br>Test class: com.apex.testCases.CashDrawerMaintenance</td>
+<td><div><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=103.0.5060.134)
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;SEZLAP-13554T&apos;, ip: &apos;192.168.1.211&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_311&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [292d19117221f68123dda3f257472988, clickElement {id=9948512a-fc3d-4cdd-82cc-fd05dca737ae}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\Kapil\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49931}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49931/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (292d19117221f68123dda3f257472988)] -&gt; xpath: //button[contains(@id,&apos;ASSIGN_TO_REG_lov_btn&apos;)]]
+Session ID: 292d19117221f68123dda3f257472988
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at com.apex.utils.ElementUtil.doClick(ElementUtil.java:71)
+	at com.apex.testCases.CashDrawerMaintenance.TC48verifySuggestedFloatAmountInCashDrawerRecon(CashDrawerMaintenance.java:1354)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1309732543", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1309732543'><pre>org.openqa.selenium.ElementNotInteractableException: element not interactable
+  (Session info: chrome=103.0.5060.134)
+Build info: version: &apos;4.0.0&apos;, revision: &apos;3a21814679&apos;
+System info: host: &apos;SEZLAP-13554T&apos;, ip: &apos;192.168.1.211&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_311&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [292d19117221f68123dda3f257472988, clickElement {id=9948512a-fc3d-4cdd-82cc-fd05dca737ae}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 103.0.5060.134, chrome: {chromedriverVersion: 103.0.5060.134 (8ec6fce403b..., userDataDir: C:\Users\Kapil\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:49931}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:49931/devtoo..., se:cdpVersion: 103.0.5060.134, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (292d19117221f68123dda3f257472988)] -&gt; xpath: //button[contains(@id,&apos;ASSIGN_TO_REG_lov_btn&apos;)]]
+Session ID: 292d19117221f68123dda3f257472988
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:164)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:139)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:559)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:251)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at com.apex.utils.ElementUtil.doClick(ElementUtil.java:71)
+	at com.apex.testCases.CashDrawerMaintenance.TC48verifySuggestedFloatAmountInCashDrawerRecon(CashDrawerMaintenance.java:1354)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.util.ArrayList.forEach(ArrayList.java:1259)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>51</td>
+<td>com.apex.testCases.CashDrawerMaintenance@305ffe9e</td></tr>
+</table><p>
+</body>
+</html>

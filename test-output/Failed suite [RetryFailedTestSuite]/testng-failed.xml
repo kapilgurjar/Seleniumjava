@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Failed suite [RetryFailedTestSuite]]">
+  <listeners>
+    <listener class-name="com.apex.analyzer.MyTransformer"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)(failed)">
+    <classes>
+      <class name="com.apex.testCases.SafeMaintenance">
+        <methods>
+          <include name="setUpGlobalFlag"/>
+          <include name="beforeMethod"/>
+          <include name="endTest"/>
+          <include name="TC35verifyExpAmountSumInCheckAuditScreen"/>
+          <include name="afterMethod"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.apex.testCases.SafeMaintenance -->
+      <class name="com.apex.testCases.CashDrawerMaintenance">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="TC41verifyActualExpectedAndOverShortAmount"/>
+          <include name="endTest"/>
+          <include name="setUpGlobalFlag"/>
+          <include name="TC48verifySuggestedFloatAmountInCashDrawerRecon"/>
+          <include name="afterMethod"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.apex.testCases.CashDrawerMaintenance -->
+    </classes>
+  </test> <!-- Test(failed)(failed) -->
+</suite> <!-- Failed suite [Failed suite [RetryFailedTestSuite]] -->

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Cash Drawer Reconcilation]">
+  <test thread-count="5" name="CDR(failed)">
+    <classes>
+      <class name="com.apex.testCases.CashDrawerMaintenance">
+        <methods>
+          <include name="verifyAuthCancelButton"/>
+          <include name="TC07verify_Loose_Sum"/>
+          <include name="TC37verifyThatAssignToRegisterSearchIsWorkingWithValidData"/>
+          <include name="beforeMethod"/>
+          <include name="TC08createNewCashDrawerwithregidAndVerifySaveAction"/>
+          <include name="TC23verifyAuthorisationWindowWithInvalidcredentials"/>
+          <include name="TC24verifycashBoxLovData"/>
+          <include name="TC30changesIncurrencyCoinOtherTenders"/>
+          <include name="TC06verify_rolls_Sum"/>
+          <include name="endTest"/>
+          <include name="TC22verifyCancelButtonCashDrawerDecelaration"/>
+          <include name="setup"/>
+          <include name="TC44verifySAFE_RECON_IN_PROCESS_OnReconScreen"/>
+          <include name="TC04verifyRegisterLovshouldbematchingtherecordsasperMMSO"/>
+          <include name="TC33verifyPOSCASHDRAWERASSIGNED"/>
+          <include name="TC38verifyThatAssignToRegisterSearchIsWorkingWithInValidData"/>
+          <include name="TC19verifyThatOnly_Depositabe_Tenders_Are_Shown_In_The_Tender_Section"/>
+          <include name="TC32verifyTheCashDrawerValidationMessage"/>
+          <include name="TC35verifyThatAssignToRegisterIsMandatory"/>
+          <include name="verifyTheActualAmount"/>
+          <include name="TC16verifyPOSCASHDRAWERASSIGNED"/>
+          <include name="afterMethod"/>
+          <include name="TC10verify_Clear_Button_cashDrawerSetUp"/>
+          <include name="TC25verifyRegLovData"/>
+          <include name="TC26verifyHeaderFieldsGreyedOut"/>
+          <include name="TC27verifyTenderCashAmountInCashDrawerDeclaration"/>
+          <include name="TC21verifyExitButtonCashDrawerDecelaration"/>
+          <include name="TC09createNewCashDrawerwithoutregidAndVerifySaveAction"/>
+          <include name="TC11verify_Exit_Button_CashDrawerSetUp"/>
+          <include name="TC15verifyAssignToRegisterSearchWithInValidData"/>
+          <include name="TC17verifyTheSuggestedFloatAmountShouldBeComingFromTheQuery"/>
+          <include name="TC05verify_Currency_Sum"/>
+          <include name="TC03verifyAuthorizationWindowWithWrongcredentials"/>
+          <include name="TC31verifyTheAssignToRegisterValidationMessage"/>
+          <include name="TC20verifySiteNoAndSiteNameTextFiledAreVisible"/>
+          <include name="TC36verifyThatCashDrawerIsMandatory"/>
+          <include name="TC02verifyCurrencySectionValidationMessagesOnCashdrawerSetupScreen"/>
+          <include name="TC18verifySAFE_RECON_IN_PROCESS"/>
+          <include name="TC39verifyThatCashDrawerLovSearchIsWorkingWithValidData"/>
+          <include name="TC47verifyCSHBOX_FORCE_DECLARATION"/>
+          <include name="TC12verify_CurrencySection_With_Invalid_Data"/>
+          <include name="TC34verifyCheckdetailsValueISAddedToCheckField"/>
+          <include name="TC14verifyAssignToRegisterSearchWithValidData"/>
+          <include name="TC13verifySiteNoAndSiteNameAreDisabled"/>
+          <include name="TC48verifySuggestedFloatAmountInCashDrawerRecon"/>
+        </methods>
+      </class> <!-- com.apex.testCases.CashDrawerMaintenance -->
+    </classes>
+  </test> <!-- CDR(failed) -->
+</suite> <!-- Failed suite [Cash Drawer Reconcilation] -->
